@@ -1,0 +1,114 @@
+﻿@model List<ReadAndWatch.Models.Movie>
+
+
+
+@{
+    string GetImagePath(string title)
+    {
+        var imageName = title.ToLower()
+            .Replace(" ", "-")
+            .Replace(":", "")
+            .Replace(".", "")
+            .Replace("'", "")
+            .Replace("!", "") + ".jpg";
+
+        return Url.Content("~/images/" + imageName);
+    }
+}
+
+
+@{
+    ViewData["Title"] = "Önerilen Filmler";
+}
+
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2.text-center {
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .movie-card {
+        background-color: #1c1c1c;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        text-decoration: none;
+        display: block;
+        color: white;
+    }
+
+        .movie-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+
+    .movie-poster {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+
+    .movie-body {
+        padding: 16px;
+    }
+
+    .movie-title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .movie-overview {
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+</style>
+
+<h2 class="text-center my-4">🎬 Senin İçin Önerilen Filmler</h2>
+
+@if (!Model?.Any() ?? true)
+{
+    <p class="text-center text-muted">Henüz önerilen film bulunamadı.</p>
+}
+else
+{
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var movie in Model)
+            {
+                <div class="col">
+                    <a asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id" class="movie-card">
+                        <img src="@GetImagePath(movie.Title)"
+                             onerror="this.onerror=null; this.src='/images/movie-poster.jpg';"
+                             alt="@movie.Title" />
+
+                        <div class="movie-body">
+                            <h5 class="movie-title">@movie.Title</h5>
+                            <p class="movie-overview">
+                                @(
+                                    string.IsNullOrEmpty(movie.Overview)
+                                    ? "Açıklama bulunamadı."
+                                    : movie.Overview.Length > 100
+                                    ? movie.Overview.Substring(0, 100) + "..."
+                                    : movie.Overview
+                                    )
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+}

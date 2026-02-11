@@ -1,0 +1,121 @@
+﻿@model ReadAndWatch.Models.User
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background: url('/images/netflix-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .register-container {
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 100px auto;
+        color: white;
+    }
+
+    .btn-red {
+        background-color: #e50914;
+        color: white;
+    }
+
+    .btn-red:hover {
+        background-color: #f40612;
+    }
+
+    input.form-control {
+        background-color: #333;
+        border: none;
+        color: white;
+    }
+
+    input.form-control::placeholder {
+        color: #aaa;
+    }
+
+    .form-label {
+        color: #ccc;
+    }
+
+    .text-danger {
+        font-size: 0.9em;
+    }
+</style>
+
+
+
+
+
+<div class="register-container">
+    <h2 class="text-center mb-4">Kayıt Ol</h2>
+
+    <form asp-action="Register" asp-controller="User" method="post">
+
+        <div class="mb-3">
+            <label asp-for="Username" class="form-label">İsim</label>
+            <input asp-for="Username" class="form-control" placeholder="İsminizi girin" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Surname" class="form-label">Soyisim</label>
+            <input asp-for="Surname" class="form-control" placeholder="Soyisminizi girin" />
+            <span asp-validation-for="Surname" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">E-posta</label>
+            <input asp-for="Email" class="form-control" placeholder="E-posta adresinizi girin" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">Parola</label>
+            <input asp-for="Password" type="password" class="form-control" placeholder="Parolanızı girin" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+        <button type="submit" class="btn btn-red w-100 mt-3">Kayıt Ol</button>
+    </form>
+</div>
+
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        <strong>Hata:</strong>
+        <ul>
+            @foreach (var state in ViewData.ModelState)
+            {
+                foreach (var error in state.Value.Errors)
+                {
+                    <li><strong>@state.Key:</strong> @error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
+
+
+
+
+
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">@TempData["Message"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+

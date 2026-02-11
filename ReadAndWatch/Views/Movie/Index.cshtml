@@ -1,0 +1,169 @@
+﻿@model List<ReadAndWatch.Models.Movie>
+
+@{
+    ViewData["Title"] = "Tüm Filmler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .page-title {
+        font-size: 32px;
+        margin-top: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .filter-section {
+        margin: 20px auto;
+        background-color: #1c1c1c;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1000px;
+    }
+
+        .filter-section label {
+            color: #ccc;
+            font-weight: 500;
+        }
+
+    .movie-grid {
+        margin-top: 30px;
+    }
+
+    .card {
+        background-color: #1c1c1c;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+        }
+
+    .card-title {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+
+    .rating-badge {
+        background-color: #e50914;
+        color: white;
+        border-radius: 8px;
+        padding: 4px 10px;
+        display: inline-block;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+</style>
+
+<h2 class="page-title">Tüm Filmler</h2>
+
+<!-- 🔍 Filtre Formu -->
+<div class="filter-section">
+    <form asp-controller="Movie" asp-action="Index" method="get" class="row g-3">
+        <div class="col-md-3">
+            <label for="genre">Tür</label>
+            <select name="genre" class="form-select">
+                <option value="">Tüm Türler</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Animation">Animation</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Thriller">Thriller</option>
+            </select>
+        </div>
+
+        <div class="col-md-3">
+            <label for="runtimeMin">Süre (dk)</label>
+            <div class="input-group">
+                <input type="number" name="runtimeMin" class="form-control" placeholder="Min">
+                <input type="number" name="runtimeMax" class="form-control" placeholder="Max">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label for="language">Dil</label>
+            <input type="text" name="language" class="form-control" placeholder="ör. en, fr">
+        </div>
+
+        <div class="col-md-3">
+            <label for="releaseYear">Yıl</label>
+            <input type="number" name="releaseYear" class="form-control" placeholder="ör. 2010">
+        </div>
+
+        <div class="col-md-12 text-end">
+            <button type="submit" class="btn btn-danger">Filtrele</button>
+        </div>
+    </form>
+</div>
+<!-- 🎬 Film Kartları -->
+<div class="container movie-grid">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
+        @foreach (var movie in Model)
+        {
+            var imageName = movie.Title.ToLower()
+            .Replace(" ", "-")
+            .Replace(":", "")
+            .Replace(".", "")
+            .Replace("'", "")
+            .Replace("!", "") + ".jpg";
+            var imagePath = Url.Content("~/images/" + imageName);
+
+            <div class="col">
+                <a asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id" style="text-decoration: none; color: inherit;">
+                    <div class="card text-center">
+                        <img src="@imagePath"
+                             onerror="this.onerror=null; this.src='/images/movie-poster.jpg';"
+                             class="card-img-top"
+                             alt="@movie.Title" />
+
+                        <div class="card-body">
+                            <div class="card-title">@movie.Title</div>
+                            <div class="rating-badge">@movie.VoteAverage</div>
+                        </div>
+                    </div>
+                </a>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="text-center mt-2">
+                        <form asp-action="AddFavoriteMovie" method="post">
+                            <input type="hidden" name="movieId" value="@movie.Id" />
+                            <button type="submit" class="btn btn-outline-light btn-sm">
+                                ❤️ Favori Ekle
+                            </button>
+                        </form>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+

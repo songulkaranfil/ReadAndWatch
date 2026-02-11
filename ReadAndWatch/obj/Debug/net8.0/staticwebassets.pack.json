@@ -1,0 +1,641 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ReadAndWatch.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ReadAndWatch.xd9xdtyh9w.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\12-angry-men.jpg",
+      "PackagePath": "staticwebassets\\images\\12-angry-men.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\It's-a-wonderful-wife.jpg",
+      "PackagePath": "staticwebassets\\images\\It's-a-wonderful-wife.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\Se7en.jpg",
+      "PackagePath": "staticwebassets\\images\\Se7en.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\alien.jpg",
+      "PackagePath": "staticwebassets\\images\\alien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\american-beauty.jpg",
+      "PackagePath": "staticwebassets\\images\\american-beauty.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\american-history-x.jpg",
+      "PackagePath": "staticwebassets\\images\\american-history-x.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\anne-of-green-gables.jpg",
+      "PackagePath": "staticwebassets\\images\\anne-of-green-gables.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\apocalypse-now.jpg",
+      "PackagePath": "staticwebassets\\images\\apocalypse-now.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\back-to-the-future.jpg",
+      "PackagePath": "staticwebassets\\images\\back-to-the-future.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\barbershop.jpg",
+      "PackagePath": "staticwebassets\\images\\barbershop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\casablanca.jpg",
+      "PackagePath": "staticwebassets\\images\\casablanca.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\city-of-god.jpg",
+      "PackagePath": "staticwebassets\\images\\city-of-god.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\counting.jpg",
+      "PackagePath": "staticwebassets\\images\\counting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\dancer,-texas-pop.-81.jpg",
+      "PackagePath": "staticwebassets\\images\\dancer,-texas-pop.-81.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\das-boot.jpg",
+      "PackagePath": "staticwebassets\\images\\das-boot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\dead-poets-society.jpg",
+      "PackagePath": "staticwebassets\\images\\dead-poets-society.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\dreaming-of-joseph-lees.jpg",
+      "PackagePath": "staticwebassets\\images\\dreaming-of-joseph-lees.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\déjà-vu.jpg",
+      "PackagePath": "staticwebassets\\images\\déjà-vu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\fight-club.jpg",
+      "PackagePath": "staticwebassets\\images\\fight-club.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\forrest-gump.jpg",
+      "PackagePath": "staticwebassets\\images\\forrest-gump.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\gone-girl.jpg",
+      "PackagePath": "staticwebassets\\images\\gone-girl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\good-will-hunting.jpg",
+      "PackagePath": "staticwebassets\\images\\good-will-hunting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\goodfellas.jpg",
+      "PackagePath": "staticwebassets\\images\\goodfellas.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\guten-tag,-ramón.jpg",
+      "PackagePath": "staticwebassets\\images\\guten-tag,-ramón.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\howls-moving-castle.jpg",
+      "PackagePath": "staticwebassets\\images\\howls-moving-castle.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\incendies.jpg",
+      "PackagePath": "staticwebassets\\images\\incendies.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\inception.jpg",
+      "PackagePath": "staticwebassets\\images\\inception.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\inside-out.jpg",
+      "PackagePath": "staticwebassets\\images\\inside-out.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\interstellar.jpg",
+      "PackagePath": "staticwebassets\\images\\interstellar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\karachi-se-lahore.jpg",
+      "PackagePath": "staticwebassets\\images\\karachi-se-lahore.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\lake-of-fire.jpg",
+      "PackagePath": "staticwebassets\\images\\lake-of-fire.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\like-mike.jpg",
+      "PackagePath": "staticwebassets\\images\\like-mike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\little-big-top.jpg",
+      "PackagePath": "staticwebassets\\images\\little-big-top.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\little-man.jpg",
+      "PackagePath": "staticwebassets\\images\\little-man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\love-jones.jpg",
+      "PackagePath": "staticwebassets\\images\\love-jones.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\me-you-and-five-bucks.jpg",
+      "PackagePath": "staticwebassets\\images\\me-you-and-five-bucks.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\memento.jpg",
+      "PackagePath": "staticwebassets\\images\\memento.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\metropolis.jpg",
+      "PackagePath": "staticwebassets\\images\\metropolis.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\modern-times.jpg",
+      "PackagePath": "staticwebassets\\images\\modern-times.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\oldboy.jpg",
+      "PackagePath": "staticwebassets\\images\\oldboy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\on-the-waterfront.jpg",
+      "PackagePath": "staticwebassets\\images\\on-the-waterfront.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\once-upon-a-time-in-america.jpg",
+      "PackagePath": "staticwebassets\\images\\once-upon-a-time-in-america.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\once-upon-a-time-in-the-west.jpg",
+      "PackagePath": "staticwebassets\\images\\once-upon-a-time-in-the-west.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\one-flew-over-the-cuckoos-nest.jpg",
+      "PackagePath": "staticwebassets\\images\\one-flew-over-the-cuckoos-nest.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\one-mans-hero.jpg",
+      "PackagePath": "staticwebassets\\images\\one-mans-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\ordinary-people.jpg",
+      "PackagePath": "staticwebassets\\images\\ordinary-people.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\polisse.jpg",
+      "PackagePath": "staticwebassets\\images\\polisse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\princess-mononoke.jpg",
+      "PackagePath": "staticwebassets\\images\\princess-mononoke.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\psycho.jpg",
+      "PackagePath": "staticwebassets\\images\\psycho.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\pulp-fiction.jpg",
+      "PackagePath": "staticwebassets\\images\\pulp-fiction.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\reservoir-dogs.jpg",
+      "PackagePath": "staticwebassets\\images\\reservoir-dogs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\room.jpg",
+      "PackagePath": "staticwebassets\\images\\room.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\samsara.jpg",
+      "PackagePath": "staticwebassets\\images\\samsara.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\sardaarji.jpg",
+      "PackagePath": "staticwebassets\\images\\sardaarji.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\scarface.jpg",
+      "PackagePath": "staticwebassets\\images\\scarface.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\schindlers-list.jpg",
+      "PackagePath": "staticwebassets\\images\\schindlers-list.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\seven-samurai.jpg",
+      "PackagePath": "staticwebassets\\images\\seven-samurai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\some-like-it-hot.jpg",
+      "PackagePath": "staticwebassets\\images\\some-like-it-hot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\spirited-away.jpg",
+      "PackagePath": "staticwebassets\\images\\spirited-away.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\star-wars.jpg",
+      "PackagePath": "staticwebassets\\images\\star-wars.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\stiff-upper-lips.jpg",
+      "PackagePath": "staticwebassets\\images\\stiff-upper-lips.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\taxi-driver.jpg",
+      "PackagePath": "staticwebassets\\images\\taxi-driver.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-apartment.jpg",
+      "PackagePath": "staticwebassets\\images\\the-apartment.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-business-of-fancydancing.jpg",
+      "PackagePath": "staticwebassets\\images\\the-business-of-fancydancing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-dark-knight.jpg",
+      "PackagePath": "staticwebassets\\images\\the-dark-knight.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-empire-strikes-back.jpg",
+      "PackagePath": "staticwebassets\\images\\the-empire-strikes-back.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-godfather-part-ii.jpg",
+      "PackagePath": "staticwebassets\\images\\the-godfather-part-ii.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-godfather.jpg",
+      "PackagePath": "staticwebassets\\images\\the-godfather.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-good,-the-bad-and-the-ugly.jpg",
+      "PackagePath": "staticwebassets\\images\\the-good,-the-bad-and-the-ugly.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-grand-budapest-hotel.jpg",
+      "PackagePath": "staticwebassets\\images\\the-grand-budapest-hotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-green-mile.jpg",
+      "PackagePath": "staticwebassets\\images\\the-green-mile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-hunt.jpg",
+      "PackagePath": "staticwebassets\\images\\the-hunt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-imitation-game.jpg",
+      "PackagePath": "staticwebassets\\images\\the-imitation-game.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-jimmy-show.jpg",
+      "PackagePath": "staticwebassets\\images\\the-jimmy-show.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-kentucky-fried.jpg",
+      "PackagePath": "staticwebassets\\images\\the-kentucky-fried.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-last-waltz.jpg",
+      "PackagePath": "staticwebassets\\images\\the-last-waltz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-lion-king.jpg",
+      "PackagePath": "staticwebassets\\images\\the-lion-king.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-lord-of-the-rings-the-fellowship-of-the-ring.jpg",
+      "PackagePath": "staticwebassets\\images\\the-lord-of-the-rings-the-fellowship-of-the-ring.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-lord-of-the-rings-the-return-of-the-king.jpg",
+      "PackagePath": "staticwebassets\\images\\the-lord-of-the-rings-the-return-of-the-king.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-lord-of-the-rings-the-two-towers.jpg",
+      "PackagePath": "staticwebassets\\images\\the-lord-of-the-rings-the-two-towers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-pianist.jpg",
+      "PackagePath": "staticwebassets\\images\\the-pianist.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-prestige.jpg",
+      "PackagePath": "staticwebassets\\images\\the-prestige.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-prisoner-of-zenda.jpg",
+      "PackagePath": "staticwebassets\\images\\the-prisoner-of-zenda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-shawshank-redemption.jpg",
+      "PackagePath": "staticwebassets\\images\\the-shawshank-redemption.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-shining.jpg",
+      "PackagePath": "staticwebassets\\images\\the-shining.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-silence-of-the-lambs.jpg",
+      "PackagePath": "staticwebassets\\images\\the-silence-of-the-lambs.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-usual-suspects.jpg",
+      "PackagePath": "staticwebassets\\images\\the-usual-suspects.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\the-visual-bible-the-gospel-of-john.jpg",
+      "PackagePath": "staticwebassets\\images\\the-visual-bible-the-gospel-of-john.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\there-goes-my-baby.jpg",
+      "PackagePath": "staticwebassets\\images\\there-goes-my-baby.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\there-will-be-blood.jpg",
+      "PackagePath": "staticwebassets\\images\\there-will-be-blood.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\to-kill-a-mockingbird.jpg",
+      "PackagePath": "staticwebassets\\images\\to-kill-a-mockingbird.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\we-were-soldiers.jpg",
+      "PackagePath": "staticwebassets\\images\\we-were-soldiers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\images\\whiplash.jpg",
+      "PackagePath": "staticwebassets\\images\\whiplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Yusuf\\Desktop\\ReadAndWatch\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReadAndWatch.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ReadAndWatch.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ReadAndWatch.props",
+      "PackagePath": "build\\ReadAndWatch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ReadAndWatch.props",
+      "PackagePath": "buildMultiTargeting\\ReadAndWatch.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ReadAndWatch.props",
+      "PackagePath": "buildTransitive\\ReadAndWatch.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

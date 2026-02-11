@@ -1,0 +1,122 @@
+﻿@model ReadAndWatch.Models.Movie
+
+
+@{
+    string GetImagePath(string title)
+    {
+        var imageName = title.ToLower()
+            .Replace(" ", "-")
+            .Replace(":", "")
+            .Replace(".", "")
+            .Replace("'", "")
+            .Replace("!", "") + ".jpg";
+
+        return Url.Content("~/images/" + imageName);
+    }
+}
+
+
+
+@{
+    ViewData["Title"] = @Model.Title;
+}
+
+<style>
+    .details-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        display: flex;
+        gap: 30px;
+        background-color: #1c1c1c;
+        padding: 30px;
+        border-radius: 16px;
+        color: white;
+    }
+
+        .details-container img {
+            width: 320px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+    .movie-info {
+        flex: 1;
+    }
+
+        .movie-info h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .movie-info p.description {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+    .movie-details-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+        .movie-details-list li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+            .movie-details-list li strong {
+                color: #e50914;
+            }
+
+    .favorite-button {
+        background-color: #e50914;
+        border: none;
+        color: white;
+        padding: 10px 18px;
+        font-size: 16px;
+        border-radius: 8px;
+        transition: 0.3s ease;
+    }
+
+        .favorite-button:hover {
+            background-color: #ff1f3d;
+        }
+</style>
+
+<div class="details-container">
+    <img src="@GetImagePath(Model.Title)"
+         onerror="this.onerror=null; this.src='/images/movie-poster.jpg';"
+         alt="@Model.Title" />
+
+    <div class="movie-info">
+        <h2>@Model.Title</h2>
+        <p class="description">@Model.Overview</p>
+
+
+
+
+
+        <ul class="movie-details-list">
+            <li><strong>Yönetmen:</strong> @Model.Director</li>
+            <li><strong>Tür:</strong> @Model.Genres</li>
+            <li><strong>Süre:</strong> @(Model.Runtime / 10) dakika</li>
+
+            <li><strong>Yayın Tarihi:</strong> @Model.ReleaseDate?.ToString("dd.MM.yyyy")</li>
+            <li><strong>IMDB Puanı:</strong> @(Convert.ToDouble(Model.VoteAverage) / 10) </li>
+</ul>
+        </ul>
+
+        @* Giriş yapıldıysa favori butonu gösterilsin *@
+        @if (User.Identity.IsAuthenticated)
+        {
+            <form asp-controller="Movie" asp-action="AddFavoriteMovie" method="post">
+                <input type="hidden" name="movieId" value="@Model.Id" />
+                <button type="submit" class="favorite-button">❤️ Favorilere Ekle</button>
+            </form>
+        }
+    </div>
+</div>

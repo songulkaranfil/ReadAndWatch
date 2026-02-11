@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Tavsiye Ver";
+}
+
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    .recommend-container {
+        max-width: 700px;
+        margin: 80px auto;
+        background-color: #1e1e1e;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+        text-align: center;
+    }
+
+        .recommend-container h2 {
+            font-size: 1.9rem;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+
+    .recommend-btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recommend-btn-custom {
+        background-color: #2a2a2a;
+        color: #fff;
+        border: 2px solid #444;
+        font-size: 1.1rem;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+        .recommend-btn-custom:hover {
+            transform: scale(1.05);
+            background-color: #e50914;
+        }
+
+        .recommend-btn-custom.selected {
+            background-color: #e50914;
+            border-color: #e50914;
+        }
+</style>
+
+<div class="recommend-container">
+    <h2>Ne Türde Bir Tavsiye İstiyorsunuz?</h2>
+
+    <div class="recommend-btn-group">
+        <form asp-action="Recommend" asp-controller="Book" method="post">
+            <button type="submit" class="recommend-btn-custom" id="btnBook">📚 Kitap Önerisi Al</button>
+        </form>
+
+        <form asp-action="Recommend" asp-controller="Movie" method="post">
+            <button type="submit" class="recommend-btn-custom" id="btnMovie">🎬 Film Önerisi Al</button>
+        </form>
+
+        <form method="post" asp-controller="Recommend" asp-action="CrossRecommend">
+            <input type="hidden" name="recommendationType" value="book" />
+            <button type="submit" class="recommend-btn-custom" id="btnCrossBook">📽️ Filmlerime Göre Kitap Öner</button>
+        </form>
+
+        <form method="post" asp-controller="Recommend" asp-action="CrossRecommend">
+            <input type="hidden" name="recommendationType" value="movie" />
+            <button type="submit" class="recommend-btn-custom" id="btnCrossMovie">📖 Kitaplarıma Göre Film Öner</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll(".recommend-btn-custom");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function (e) {
+            // toggle: yeniden tıklanırsa seçimi kaldır
+            e.preventDefault();
+
+            // Formu gönder
+            if (!button.classList.contains("selected")) {
+                // Diğerlerinden seçimi kaldır
+                buttons.forEach(btn => btn.classList.remove("selected"));
+                button.classList.add("selected");
+
+                // Form submit et
+                button.closest("form").submit();
+            } else {
+                // Seçili butona tekrar basılırsa kaldır
+                button.classList.remove("selected");
+            }
+        });
+    });
+</script>

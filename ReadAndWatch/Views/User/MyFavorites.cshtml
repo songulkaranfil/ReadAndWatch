@@ -1,0 +1,165 @@
+﻿@model ReadAndWatch.Models.FavoriteViewModel
+
+
+
+@functions {
+    public string GetImagePath(string title)
+    {
+        var imageName = title.ToLower()
+            .Replace(" ", "-")
+            .Replace(":", "")
+            .Replace(".", "")
+            .Replace("'", "")
+            .Replace("!", "") + ".jpg";
+
+        return Url.Content("~/images/" + imageName);
+    }
+}
+
+
+
+@{
+    ViewData["Title"] = "Favorilerim";
+}
+
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+    }
+
+    h3.section-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+        h3.section-title.books {
+            color: #ffffff;
+        }
+
+        h3.section-title.movies {
+            color: #e50914;
+        }
+
+        h3.section-title i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+    .card {
+        background-color: #1e1e1e;
+        border: 1px solid #2c2c2c;
+        color: #e0e0e0;
+        transition: transform 0.2s ease;
+    }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+    .text-muted {
+        color: #aaa !important;
+    }
+
+    .border-end {
+        border-right: 1px solid #333;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <!-- Sol: Kitaplar -->
+        <div class="col-md-6 border-end">
+            <h3 class="section-title books">
+                <i class="bi bi-journal-bookmark-fill"></i> Favori Kitaplarım
+            </h3>
+
+            @if (Model.FavoriteBooks != null && Model.FavoriteBooks.Any())
+            {
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    @foreach (var book in Model.FavoriteBooks)
+                    {
+                        <div class="col">
+                            <div class="card h-100 position-relative shadow-sm">
+                                <img src="@(string.IsNullOrEmpty(book.Thumbnail)
+            ? Url.Content("~/images/book-placeholder.jpg")
+            : book.Thumbnail)"
+                                     class="card-img-top" alt="@book.Title" />
+
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">@book.Title</h6>
+                                    <p class="card-text text-muted">
+                                        @(string.IsNullOrEmpty(book.Description)
+                                            ? "Açıklama bulunamadı."
+                                            : book.Description.Substring(0, Math.Min(book.Description.Length, 100)) + "...")
+                                    </p>
+                                </div>
+                                <form asp-action="RemoveFavoriteBook" asp-controller="User" method="post"
+                                      class="position-absolute top-0 end-0 m-2">
+                                    <input type="hidden" name="bookId" value="@book.Id" />
+                                    <button type="submit" class="btn btn-sm btn-outline-danger" title="Favoriden çıkar">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">Favori kitap bulunamadı.</p>
+            }
+        </div>
+
+        <!-- Sağ: Filmler -->
+        <div class="col-md-6">
+            <h3 class="section-title movies">
+                <i class="bi bi-film"></i> Favori Filmlerim
+            </h3>
+
+            @if (Model.FavoriteMovies != null && Model.FavoriteMovies.Any())
+            {
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    @foreach (var movie in Model.FavoriteMovies)
+                    {
+                        <div class="col">
+                            <div class="card h-100 position-relative shadow-sm">
+                                <img src="@GetImagePath(movie.Title)" class="card-img-top" alt="@movie.Title"
+                                     onerror="this.onerror=null; this.src='/images/movie-poster.jpg';" />
+
+                                <div class="card-body text-center">
+                                    <h6 class="card-title">@movie.Title</h6>
+                                    <p class="card-text text-muted">
+                                        @(string.IsNullOrEmpty(movie.Overview)
+                                            ? "Açıklama bulunamadı."
+                                            : movie.Overview.Substring(0, Math.Min(movie.Overview.Length, 100)) + "...")
+                                    </p>
+                                </div>
+                                <form asp-action="RemoveFavoriteMovie" asp-controller="User" method="post"
+                                      class="position-absolute top-0 end-0 m-2">
+                                    <input type="hidden" name="movieId" value="@movie.Id" />
+                                    <button type="submit" class="btn btn-sm btn-outline-danger" title="Favoriden çıkar">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">Favori film bulunamadı.</p>
+            }
+        </div>
+    </div>
+</div>

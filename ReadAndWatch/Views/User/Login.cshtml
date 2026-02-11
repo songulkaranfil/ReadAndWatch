@@ -1,0 +1,77 @@
+﻿@model ReadAndWatch.Models.User
+@{
+    ViewData["Title"] = "Giriş Yap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background: url('/images/netflix-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .login-container {
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 100px auto;
+        color: white;
+    }
+
+    .btn-red {
+        background-color: #e50914;
+        color: white;
+    }
+
+        .btn-red:hover {
+            background-color: #f40612;
+        }
+
+    input.form-control {
+        background-color: #333;
+        border: none;
+        color: white;
+    }
+
+        input.form-control::placeholder {
+            color: #aaa;
+        }
+
+    .form-label {
+        color: #ccc;
+    }
+
+    .text-danger {
+        font-size: 0.9em;
+    }
+</style>
+
+<div class="login-container">
+    <h2 class="text-center mb-4">Giriş Yap</h2>
+
+    <form asp-action="Login" asp-controller="User" method="post">
+
+        <div class="mb-3">
+            <label class="form-label" for="email">E-posta</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="E-posta adresinizi girin" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="password">Şifre</label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="Parolanızı girin" required />
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="text-danger">@ViewBag.Error</div>
+        }
+
+        <button type="submit" class="btn btn-red w-100 mt-3">Giriş Yap</button>
+        <div class="text-center mt-3">
+            <span>Hesabınız yok mu?</span>
+            <a href="/User/Register" class="btn btn-outline-light btn-sm ms-2">Kayıt Ol</a>
+        </div>
+
+    </form>
+</div>

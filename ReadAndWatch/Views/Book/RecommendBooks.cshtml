@@ -1,0 +1,108 @@
+﻿@model List<ReadAndWatch.Models.Book>
+
+@{
+    ViewData["Title"] = "Önerilen Kitaplar";
+}
+
+<style>
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .book-card {
+        background-color: #1c1c1c;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+        .book-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+
+    .book-img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .book-body {
+        padding: 16px;
+    }
+
+    .book-title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .book-author {
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .book-description {
+        font-size: 0.85rem;
+        color: #999;
+    }
+
+    .author-label {
+        color: #e50914;
+        font-weight: bold;
+    }
+</style>
+
+<h2 class="text-center my-4">📚 Senin İçin Önerilen Kitaplar</h2>
+
+@if (!Model?.Any() ?? true)
+{
+    <p class="text-center text-muted">Henüz önerilen kitap bulunamadı.</p>
+}
+else
+{
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            @foreach (var book in Model)
+            {
+                <div class="col">
+                    <a asp-controller="Book" asp-action="Details" asp-route-id="@book.Id" class="book-card">
+                        @if (!string.IsNullOrEmpty(book.Thumbnail))
+                        {
+                            <img src="@book.Thumbnail" class="book-img" alt="@book.Title" />
+                        }
+
+                        <div class="book-body">
+                            <div class="book-title">@book.Title</div>
+                            <div class="book-author"><span class="author-label">Yazar:</span> @book.Authors</div>
+                            <div class="book-description">
+                                @(
+                                    string.IsNullOrEmpty(book.Description)
+                                    ? "Açıklama bulunamadı."
+                                    : book.Description.Length > 100
+                                    ? book.Description.Substring(0, 100) + "..."
+                                    : book.Description
+                                    )
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+}

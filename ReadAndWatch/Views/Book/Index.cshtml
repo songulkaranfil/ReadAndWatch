@@ -1,0 +1,177 @@
+﻿@model List<ReadAndWatch.Models.Book>
+
+@{
+    ViewData["Title"] = "Tüm Kitaplar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .page-title {
+        font-size: 32px;
+        margin-top: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .filter-section {
+        margin: 20px auto;
+        background-color: #1c1c1c;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 1000px;
+    }
+
+        .filter-section label {
+            color: #ccc;
+            font-weight: 500;
+        }
+
+    .book-grid {
+        margin-top: 30px;
+    }
+
+    .card {
+        background-color: #1c1c1c;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        height: 100%;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            height: 280px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+        }
+
+    .card-title {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #aaa;
+    }
+
+    .rating-badge {
+        background-color: #e50914;
+        color: white;
+        border-radius: 8px;
+        padding: 4px 10px;
+        display: inline-block;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+</style>
+
+<h2 class="page-title">Tüm Kitaplar</h2>
+
+<!-- 📚 Filtre Formu -->
+<div class="filter-section">
+    <form asp-controller="Book" asp-action="Index" method="get" class="row g-3">
+
+        <div class="col-md-3">
+            <label for="selectedCategory">Kategori</label>
+            <select name="selectedCategory" class="form-select">
+                <option value="">Tüm Kategoriler</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Nonfiction">Nonfiction</option>
+                <option value="History">History</option>
+                <option value="Biography">Biography</option>
+                <option value="Autobiography">Autobiography</option>
+                <option value="Science">Science</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Religion">Religion</option>
+                <option value="Business">Business</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Poetry">Poetry</option>
+                <option value="Education">Education</option>
+                <option value="Health">Health</option>
+                <option value="Politics">Politics</option>
+                <option value="Art">Art</option>
+                <option value="Travel">Travel</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Children">Children</option>
+                <option value="Young Adult">Young Adult</option>
+                <option value="Drama">Drama</option>
+                <option value="Spirituality">Spirituality</option>
+                <option value="Technology">Technology</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <label for="minPages">Min Sayfa</label>
+            <input type="number" name="minPages" class="form-control" placeholder="Örn: 100" />
+        </div>
+
+        <div class="col-md-2">
+            <label for="maxPages">Max Sayfa</label>
+            <input type="number" name="maxPages" class="form-control" placeholder="Örn: 500" />
+        </div>
+
+        <div class="col-md-2">
+            <label for="minYear">Min Yıl</label>
+            <input type="number" name="minYear" class="form-control" placeholder="Örn: 1990" />
+        </div>
+
+        <div class="col-md-2">
+            <label for="maxYear">Max Yıl</label>
+            <input type="number" name="maxYear" class="form-control" placeholder="Örn: 2024" />
+        </div>
+
+        <div class="col-md-12 text-end">
+            <button type="submit" class="btn btn-danger">Filtrele</button>
+        </div>
+    </form>
+</div>
+
+<!-- 📖 Kitap Kartları -->
+<div class="container book-grid">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4">
+        @foreach (var book in Model)
+        {
+            <div class="col">
+                <div class="card text-center h-100">
+                    <a asp-controller="Book" asp-action="Details" asp-route-id="@book.Id" style="text-decoration:none; color:inherit">
+                        <img src="@(string.IsNullOrEmpty(book.Thumbnail) ? Url.Content("~/images/book-placeholder.jpg") : book.Thumbnail)" class="card-img-top" alt="@book.Title" />
+
+                        <div class="card-body">
+                            <div class="card-title">@book.Title</div>
+                            <div class="rating-badge">@book.AverageRating</div>
+                        </div>
+                    </a>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="card-footer bg-transparent border-top-0">
+                            <form asp-action="AddFavoriteBook" method="post">
+                                <input type="hidden" name="bookId" value="@book.Id" />
+                                <button type="submit" class="btn btn-outline-light btn-sm">
+                                    ❤️ Favori Ekle
+                                </button>
+                            </form>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+</div>

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Hoş Geldiniz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<div class="container mt-5 text-center text-white">
+    <h1>Hoş Geldiniz, @HttpContextAccessor.HttpContext.Session.GetString("Username")!</h1>
+    <p>Burada size özel kitap ve film önerilerini görebileceksiniz.</p>
+    <a href="/" class="btn btn-outline-light mt-3">Ana Sayfaya Dön</a>
+</div>
